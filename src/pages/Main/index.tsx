@@ -1,12 +1,29 @@
 import React from 'react';
-import {Text} from 'react-native';
 
-import {Container} from './styles';
+import {
+  Container,
+  Life,
+  LifeWrapper,
+  ButtonWrapper,
+  ButtonLife,
+  ButtonDemage,
+  ButtonText,
+} from './styles';
 
 export default function Main() {
   return (
     <Container>
-      <Text>TESTE</Text>
+      <LifeWrapper>
+        <Life>20</Life>
+      </LifeWrapper>
+      <ButtonWrapper>
+        <ButtonLife>
+          <ButtonText>+</ButtonText>
+        </ButtonLife>
+        <ButtonDemage>
+          <ButtonText>-</ButtonText>
+        </ButtonDemage>
+      </ButtonWrapper>
     </Container>
   );
 }

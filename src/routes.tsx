@@ -11,8 +11,13 @@ export default function Routes() {
     <Container>
       <Stack.Navigator
         screenOptions={{
-          title: 'Life Counter',
-          headerTransparent: true,
+          title: 'Izzet Life Counter',
+          headerStyle: {
+            backgroundColor: '#000914',
+          },
+          headerTitleStyle: {
+            color: '#ffffff',
+          },
         }}>
         <Stack.Screen name="Main" component={Main} />
       </Stack.Navigator>
