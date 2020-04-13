@@ -892,6 +892,13 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@react-native-community/blur@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@react-native-community/blur/-/blur-3.6.0.tgz#31c9e0f2770519c9b5c4f99418f192246f0d4db8"
+  integrity sha512-GtDBhpX2pQcjl4VopOC8FktrVufrEfYRwVeMQ2WWckqKIv2BdwvlvWvj88L1WmEdBr9UNcm3rtgz+d+YXkmirA==
+  dependencies:
+    prop-types "^15.5.10"
+
 "@react-native-community/cli-debugger-ui@^4.6.3":
   version "4.6.3"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.6.3.tgz#5e93bf170a092a011f1bb0e19886f94265a4ce97"
@@ -1143,7 +1150,7 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-native@*", "@types/react-native@^0.62.0":
+"@types/react-native@*", "@types/react-native@^0.62.2":
   version "0.62.2"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.62.2.tgz#f3e150f308c27089cefbcbfa3eb6cc14db279b2f"
   integrity sha512-oIUIbqZNN9vRnGKWHYbTVp/GyTqdaM5mfy1s4zsi6BYvHAaFOPZ32IrhIHno/A5XOv4wuGfE7g5fliDk/H0+/Q==
@@ -2215,6 +2222,11 @@ decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+
+dedent@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.6.0.tgz#0e6da8f0ce52838ef5cec5c8f9396b0c1b64a3cb"
+  integrity sha1-Dm2o8M5Sg471zsXI+TlrDBtko8s=
 
 deep-is@~0.1.3:
   version "0.1.3"
@@ -3312,7 +3324,7 @@ internal-slot@^1.0.2:
     has "^1.0.3"
     side-channel "^1.0.2"
 
-invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -4224,6 +4236,21 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+lottie-ios@^3.1.3:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/lottie-ios/-/lottie-ios-3.1.6.tgz#e70481f161666caf9f7ed9dba5ac715bc7ad8908"
+  integrity sha512-pnwkPpM3e6CiHY/Mc1eXlDEfvv/CW9jx/TNsX/JWABVF0RiyEidQd8uXBiu5GUxY813pZJN53+k+/cOiAufE5A==
+
+lottie-react-native@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/lottie-react-native/-/lottie-react-native-3.3.2.tgz#de832d4d3207e4e5c92a55ec4cf0ce0fd03e02f3"
+  integrity sha512-FS8sXDL7s7TUj3Aq0raAZKNOJUO7tuqqOAv5r5yzsZgc0t7Oo4QDxCREsaO2oqSGtTyJKlLlF6/e2g+J5XFSAQ==
+  dependencies:
+    invariant "^2.2.2"
+    lottie-ios "^3.1.3"
+    prop-types "^15.5.10"
+    react-native-safe-modules "^1.0.0"
 
 lru-cache@^4.0.1:
   version "4.1.5"
@@ -5174,7 +5201,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -5253,10 +5280,29 @@ react-native-iphone-x-helper@^1.2.1:
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.2.1.tgz#645e2ffbbb49e80844bb4cbbe34a126fda1e6772"
   integrity sha512-/VbpIEp8tSNNHIvstuA3Swx610whci1Zpc9mqNkqn14DkMbw+ORviln2u0XyHG1kPvvwTNGZY6QpeFwxYaSdbQ==
 
+react-native-linear-gradient@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
+  integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
+
+react-native-motion@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-motion/-/react-native-motion-1.0.5.tgz#4132abd74674c8eee0e170c1e1c358fee6564dc3"
+  integrity sha512-3godYhDC6LcTGaitD3ytgPNlKLwxEtYABwPyvrtxvXkMdxBSvsE1+kK2l/cJglDaMDyy0eDqH2IFJGpFVh9CBw==
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-safe-area-context@^0.7.3:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-0.7.3.tgz#ad6bd4abbabe195332c53810e4ce5851eb21aa2a"
   integrity sha512-9Uqu1vlXPi+2cKW/CW6OnHxA76mWC4kF3wvlqzq4DY8hn37AeiXtLFs2WkxH4yXQRrnJdP6ivc65Lz+MqwRZAA==
+
+react-native-safe-modules@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-safe-modules/-/react-native-safe-modules-1.0.0.tgz#10a918adf97da920adb1e33e0c852b1e80123b65"
+  integrity sha512-ShT8duWBT30W4OFcltZl+UvpPDikZFURvLDQqAsrvbyy6HzWPGJDCpdqM+6GqzPPs4DPEW31YfMNmdJcZ6zI2w==
+  dependencies:
+    dedent "^0.6.0"
 
 react-native-screens@^2.4.0:
   version "2.4.0"
@@ -5264,6 +5310,11 @@ react-native-screens@^2.4.0:
   integrity sha512-7GcXlaj7IIrM4l5Ub7BPTkNQJ2slHGt2bhmfWmW73NTXEv+7pjHlp+JpQO32Yn+O8UQGPFf0rsesfYUdER7ppQ==
   dependencies:
     debounce "^1.2.0"
+
+react-native-sound@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/react-native-sound/-/react-native-sound-0.11.0.tgz#ad60b55ba8c6dc89917f381ad3713f2738de530f"
+  integrity sha512-4bGAZfni6E2L695NQjOZwNLBQGXgBGYC4Sy+h99K5h0HqNZjCqR0+aLel+ezASxEJDpaH83gylNObXpiqJgdwg==
 
 react-native@0.62.2:
   version "0.62.2"

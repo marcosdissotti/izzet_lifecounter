@@ -13,7 +13,7 @@ export default function Routes() {
         screenOptions={{
           title: 'Izzet Life Counter',
           headerStyle: {
-            backgroundColor: '#000914',
+            backgroundColor: '#050608',
           },
           headerTitleStyle: {
             color: '#ffffff',
