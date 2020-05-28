@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">izzet_lifecounter</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">9VmKd97VcupFC34oBuJX5TAcmWwwN9USHvA_A</string>
 </resources>
